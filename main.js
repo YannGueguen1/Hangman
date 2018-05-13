@@ -8,12 +8,9 @@ var wordToFind;
 
 document.addEventListener("keypress", function(event) {
     var h = document.createElement("H1");
+    var t;
     if (event.key === " "){
         wordToFind = nouns[getRandomInt(nouns.length)];
-        //document.getElementById("dash").innerHTML = " ";
-        var t;
-        //h.appendChild(t);
-        //document.body.removeChild(m);
         for (var i=0 ; i< wordToFind.length; i++){
             t = document.createTextNode("-");
             h.appendChild(t);
