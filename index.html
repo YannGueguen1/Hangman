@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     
 </head>
 <body class="page">
-    <div class="container">
+    <div class="container title">
         <div class="jumbotron">
-            <h1 id="title">Press SPACE to start or to reinitialize</h1>
+            <h1 id="title">Let's play HANGMAN</h1>
         </div>
     </div>
+    <h1>Press SPACE to start or to reinitialize</h1>
     <div id="dash" class="row">
         <div class="panel panel-default background"></div>
-        <script src="main.js"></script>
     </div>
+    <div>Mistake counter:
+        <button type="button" class="btn btn-primary" id="counter">0</button>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

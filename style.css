@@ -2,4 +2,13 @@
     background-color:black;
     color:white;
 }
+.title{
+    text-align: center;
+    color: green;
+}
 
+#dash {
+    text-align: center;
+    font-size: 20em;
+    color: yellow;
+}
