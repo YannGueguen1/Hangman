@@ -13,6 +13,7 @@ document.addEventListener("keypress", function(event) {
     var t;
     if (event.key === " "){
         h = document.createElement("div")
+        h.className = "word";
         wordToFind = nouns[getRandomInt(nouns.length)];
         errorCounter = 0;
         error.innerHTML = errorCounter;
@@ -27,7 +28,23 @@ document.addEventListener("keypress", function(event) {
             if (wordToFind[i] === event.key){
                 var ev = document.createTextNode(event.key);
                 p1.replaceChild(ev, p1.childNodes[i]);
+
+                isComplete = false;
+                var j;
+                for (j = 0 ; j< wordToFind.length; j++) {
+                    if (p1.childNodes[j] !== "-") {
+                    }
+                    else {
+                        isComplete = false;
+                        break;
+                    }
+                }
+                if (isComplete) {
+                    alert("Word is complete");                
+                }
+                console.log(isComplete);
             }
+            
         }
     }
     else{
