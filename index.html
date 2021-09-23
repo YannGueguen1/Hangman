@@ -3,23 +3,31 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Hangman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     
 </head>
 <body class="page">
-    <div class="container title">
-        <div class="jumbotron">
-            <h1 id="title">Let's play HANGMAN</h1>
+    <section>
+        <div class="container title">
+            <div class="jumbotron">
+                <h1 id="title">Let's play HANGMAN</h1>
+            </div>
         </div>
-    </div>
-    <h1>Press SPACE to start or to reinitialize</h1>
-    <div id="dash">Come on, press SPACE</div>
-    <div class="text">Errors made:
-        <button type="button" class="btn btn-primary" id="counter">0</button>
-    </div>
+    </section>
+    <section>
+        <h1>Press SPACE to start or to reinitialize</h1>
+        <div id="dash">Come on, press SPACE</div>
+        <div class="text">Errors made:
+            <button type="button" class="btn btn-primary" id="counter">0</button>
+        </div>
+    </section>
+    <section>
+        <div>Letters pressed so far:</div>
+        <div id="tries"></div>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>
